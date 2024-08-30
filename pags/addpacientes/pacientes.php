@@ -10,8 +10,10 @@
        <input type="submit" value="Pesquisar">
     </form>
 </div>
-<table border="1">
-    <thead>
+<div class="tabela">
+<table class="table table-dark table-striped table-bordered">
+    
+    <thead> 
         <tr>
 
             <th>ID</th>
@@ -82,6 +84,7 @@ LIMIT  $inicio, $quantidade
     </tbody>
 
 </table>
+</div>
 <br>
 <?php
 $sqlTotal =  "SELECT idPaciente FROM dbagendador.paciente";
